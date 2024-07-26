@@ -6,44 +6,28 @@
     <title>Cards Gallery</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
     <!-- FancyBox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <style>
-        .card {
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 1rem;
-        }
-        .card-img-top {
-            cursor: pointer;
-        }
-        .card-header, .card-body {
-            text-align: center;
-        }
-        .card-body h6 {
-            margin-bottom: 0.5rem;
-        }
-    </style>
 </head>
 <body>
-    <div class="container my-4">
-        <h2 class="text-center mb-4">Cards Gallery</h2>
+    <div class="container">
+        <h2>Cards Gallery</h2>
         <div class="row">
             <!-- Card 1 -->
             <div class="col-md-4">
                 <div class="card">
                     <a data-fancybox="gallery" href="https://via.placeholder.com/600x400" class="card-img-top">
-                        <img src="https://via.placeholder.com/300x200" alt="Image1" class="img-fluid">
+                        <img src="https://via.placeholder.com/300x200" alt="Image1">
                     </a>
-                    <div class="card-header">
-                        <h6>Description 1</h6>
-                    </div>
                     <div class="card-body">
+                        <h6>Description 1</h6>
                         <p>Details about image 1.</p>
                     </div>
                 </div>
             </div>
-            <!-- Repeat for other cards -->
+            <!-- Repeat for 5 more cards -->
         </div>
     </div>
 
