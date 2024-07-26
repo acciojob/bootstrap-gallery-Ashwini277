@@ -1,1 +1,52 @@
-/*  your css code here. If applicable */
+/* Ensure the gallery container has some padding and center alignment */
+.container {
+    margin-top: 2rem;
+}
+
+/* Center the heading of the gallery */
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Style the individual cards */
+.card {
+    border-radius: 15px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensure the content stays within the rounded corners */
+    margin-bottom: 1.5rem; /* Spacing between cards */
+}
+
+/* Center-align text within the card header and body */
+.card-header, .card-body {
+    text-align: center;
+}
+
+/* Style the card image */
+.card-img-top {
+    border-bottom: 1px solid #ddd; /* Add a border below the image */
+    border-radius: 15px 15px 0 0; /* Ensure top corners match the card's rounded corners */
+    cursor: pointer; /* Indicate that the image is clickable */
+}
+
+/* Ensure that the heading inside the card is styled correctly */
+.card-header h6 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.1rem; /* Increase font size slightly */
+}
+
+/* Style the text inside the card body */
+.card-body p {
+    font-size: 0.9rem; /* Adjust font size for readability */
+    color: #555; /* Slightly lighter color for the text */
+}
+
+/* Add a border-radius to the images for a rounded appearance */
+img {
+    border-radius: 15px; /* Matches the card's border-radius */
+}
+
+/* Lightbox styling (Optional) */
+[data-fancybox="gallery"] {
+    display: block; /* Ensure it is visible */
+}
+
