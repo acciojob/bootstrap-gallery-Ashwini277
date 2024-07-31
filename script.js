@@ -15,7 +15,7 @@ describe('Compact Gallery Tests', () => {
         cy.get('.card').should('have.length.at.least', 6).within(() => {
             cy.get('.card-body').should('exist');
         });
-        cy.get('a[data-featherlight="image"]').should('have.length.at.least', 6);
+        cy.get('a.lightbox').should('have.length.at.least', 6);
     });
 
     it('tests styling', () => {
@@ -24,4 +24,3 @@ describe('Compact Gallery Tests', () => {
         cy.get('.card').should('have.css', 'border-radius', '10px');
     });
 });
-
