@@ -3,44 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards Gallery</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- FancyBox CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <title>Compact Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.14/release/featherlight.min.css">
+    <style>
+        .card {
+            border-radius: 10px;
+        }
+        .card-body {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Cards Gallery</h2>
-        <div class="row">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <a data-fancybox="gallery" href="https://via.placeholder.com/600x400" class="card-img-top">
-                        <img src="https://via.placeholder.com/300x200" alt="Image1">
-                    </a>
-                    <div class="card-body">
-                        <h6>Description 1</h6>
-                        <p>Details about image 1.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat for 5 more cards -->
-        </div>
-    </div>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- FancyBox JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script>
-        // Initialize FancyBox
-        $("[data-fancybox='gallery']").fancybox();
-    </script>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Cards Gallery</h2>
+    <div class="row">
+        <!-- Cards will go here -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.14/release/featherlight.min.js"></script>
 </body>
 </html>
